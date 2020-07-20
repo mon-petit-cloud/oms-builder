@@ -15,6 +15,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: monpetitcloud/openmapstyle-builder
+          repository: monpetitcloud/oms-builder
           tags: latest
           push: ${{ github.ref == 'refs/heads/master' && github.event_name == 'push'  }}
